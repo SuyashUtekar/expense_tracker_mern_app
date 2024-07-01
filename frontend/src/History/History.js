@@ -16,7 +16,7 @@ function History() {
           <div key={_id} className="history-item">
             <p
               style={{
-                color: type === "expenses" ? "red" : "var(--color-green)",
+                color: type === "expense" ? "red" : "var(--color-green)",
               }}
             >
               {title}
@@ -24,10 +24,10 @@ function History() {
 
             <p
               style={{
-                color: type === "expenses" ? "red" : "var(--color-green)",
+                color: type === "expense" ? "red" : "var(--color-green)",
               }}
             >
-              {type === "expenses" ? `-${Math.abs(amount)}` : `+${amount}`}
+              {type === "expense" ? `-${amount}` : `+${amount}`}
             </p>
           </div>
         );
